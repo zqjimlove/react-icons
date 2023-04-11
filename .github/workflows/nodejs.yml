@@ -1,8 +1,10 @@
 name: Node.js CI
 
-"on":
-  - push
-  - pull_request
+on:
+  push:
+    tags:
+      - "*"
+  workflow_dispatch:
 
 jobs:
   build:

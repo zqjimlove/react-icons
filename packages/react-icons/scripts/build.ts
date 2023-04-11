@@ -29,7 +29,7 @@ async function main() {
       await taskCommon.writeEntryPoints(allOpt);
       await taskCommon.writeIconsManifest(allOpt);
       await taskCommon.writeLicense(allOpt);
-      await taskCommon.writePackageJson({ name: "react-icons" }, allOpt);
+      await taskCommon.writePackageJson({ name: "react-icons-as" }, allOpt);
       await taskCommon.copyReadme(allOpt);
     });
     await task("@react-icons/all write icons", async () => {
@@ -50,12 +50,12 @@ async function main() {
       await taskCommon.writeIconsManifest(filesOpt);
       await taskCommon.writeLicense(filesOpt);
       await taskCommon.writePackageJson(
-        { name: "@react-icons/all-files" },
+        { name: "@react-icons-as/all-files" },
         filesOpt
       );
       await taskCommon.copyReadme(filesOpt);
     });
-    await task("@react-icons/all-files write icons", async () => {
+    await task("@react-icons-as/all-files write icons", async () => {
       for (const icon of icons) {
         await taskFiles.writeIconModuleFiles(icon, filesOpt);
       }
