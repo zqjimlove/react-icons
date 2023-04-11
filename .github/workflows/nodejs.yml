@@ -22,6 +22,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          registry-url: "https://registry.npmjs.org"
+
       - name: corepack
         run: corepack enable
       - name: Get yarn cache directory path
@@ -40,8 +42,14 @@ jobs:
         run: yarn format:ci
       - name: Lint
         run: yarn lint
+
       - name: Build Packages
         run: BASE_PATH=/react-icons ./build-script.sh
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish NPM
+        run: cd packages/_react-icons_all/ && npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
