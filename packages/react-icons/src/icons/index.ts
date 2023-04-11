@@ -5,6 +5,28 @@ import { glob } from "../../scripts/glob";
 
 export const icons: IconDefinition[] = [
   {
+    id: "as",
+    name: "AlienSwap Icons",
+    contents: [
+      {
+        files: path.resolve(__dirname, "../../icons/alienswap-icons/*.svg"),
+        formatter: (name) => `As${name}`.replace(/_/g, "").replace(/&/g, "And"),
+      },
+    ],
+    projectUrl: "https://github.com/DeanWong1019/alienswap-icons.git",
+    license: "MPL-2.0 license",
+    licenseUrl:
+      "https://github.com/Klarr-Agency/Circum-Icons/blob/main/LICENSE",
+    source: {
+      type: "git",
+      localName: "alienswap-icons",
+      remoteDir: "/",
+      url: "https://github.com/DeanWong1019/alienswap-icons.git",
+      branch: "main",
+      hash: "",
+    },
+  },
+  {
     id: "ci",
     name: "Circum Icons",
     contents: [
