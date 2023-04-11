@@ -362,7 +362,7 @@ export const icons: IconDefinition[] = [
       remoteDir: "icons/",
       url: "https://github.com/Remix-Design/RemixIcon.git",
       branch: "master",
-      hash: "df9e5255ff6a3caf42fb79e27facc80af3d20545",
+      hash: "",
     },
   },
   {

@@ -62,7 +62,7 @@ async function gitCloneIcon(source: IconSetGitSource, ctx: Context) {
     }
   );
 
-  await execFile("git", ["checkout", source.hash], {
+  await execFile("git", ["checkout", source.hash || source.branch], {
     cwd: ctx.iconDir(source.localName),
   });
 }
