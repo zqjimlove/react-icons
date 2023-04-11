@@ -3668,9 +3668,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-icons/all-files@workspace:packages/_react-icons_all-files":
+"@react-icons-as/all-files@workspace:packages/_react-icons_all-files":
   version: 0.0.0-use.local
-  resolution: "@react-icons/all-files@workspace:packages/_react-icons_all-files"
+  resolution: "@react-icons-as/all-files@workspace:packages/_react-icons_all-files"
   peerDependencies:
     react: "*"
   languageName: unknown
@@ -16205,6 +16205,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons-as@workspace:packages/_react-icons_all":
+  version: 0.0.0-use.local
+  resolution: "react-icons-as@workspace:packages/_react-icons_all"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "react-icons-root@workspace:.":
   version: 0.0.0-use.local
   resolution: "react-icons-root@workspace:."
@@ -16218,13 +16226,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-icons@^4.8.1-snapshot.2, react-icons@workspace:packages/_react-icons_all":
-  version: 0.0.0-use.local
-  resolution: "react-icons@workspace:packages/_react-icons_all"
+"react-icons@npm:^4.8.1-snapshot.2":
+  version: 4.8.1-snapshot.2
+  resolution: "react-icons@npm:4.8.1-snapshot.2"
   peerDependencies:
     react: "*"
-  languageName: unknown
-  linkType: soft
+  checksum: ece41a1ce925f5304996854e0a8df83530470a7658f8261c1e6cc62de52f30ab8867e66d3c589c5840d30ef41ac97826b4e16485e95c3baa3fe238fbbbb61a70
+  languageName: node
+  linkType: hard
 
 "react-icons_builders@workspace:packages/react-icons":
   version: 0.0.0-use.local
