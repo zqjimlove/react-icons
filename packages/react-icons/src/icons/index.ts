@@ -4,7 +4,7 @@ import { type IconDefinition } from "../../scripts/_types";
 import { glob } from "../../scripts/glob";
 
 export const icons: IconDefinition[] = [
-  {
+  /* {
     id: "as",
     name: "AlienSwap Icons",
     contents: [
@@ -25,7 +25,7 @@ export const icons: IconDefinition[] = [
       branch: "main",
       hash: "",
     },
-  },
+  }, */
   {
     id: "ci",
     name: "Circum Icons",
