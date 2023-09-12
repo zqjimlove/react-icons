@@ -16601,7 +16601,7 @@ __metadata:
     prop-types: ^15.7.2
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-icons-as: ^1.0.3
+    react-icons-as: ^1.0.5
     sass: ^1.55.0
     tiny-skeleton-loader-react: ^1.1.0
     typescript: ^4.8.4
@@ -17028,7 +17028,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons-as@^1.0.3, react-icons-as@workspace:packages/_react-icons_all":
+"react-icons-as@^1.0.5, react-icons-as@workspace:packages/_react-icons_all":
   version: 0.0.0-use.local
   resolution: "react-icons-as@workspace:packages/_react-icons_all"
   peerDependencies:
