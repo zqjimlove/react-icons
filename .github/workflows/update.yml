@@ -39,4 +39,4 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Up Version
-        run: yarn version-up
+        run: yarn run version-up
