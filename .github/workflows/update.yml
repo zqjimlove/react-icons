@@ -37,6 +37,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Install dependencies
-        run: yarn --immutable
+        run: yarn
       - name: Up Version
         run: yarn version-up
