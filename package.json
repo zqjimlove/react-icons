@@ -22,5 +22,8 @@
     "version": "yarn install && git add .",
     "lerna": "lerna"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
 }
